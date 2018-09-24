@@ -1,7 +1,11 @@
 set number
 set tabstop=4
 set shiftwidth=4
+set smartindent
+set expandtab
 
+" 对大括号进行配对换行
+imap { {}<ESC>i<CR><ESC>O
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
