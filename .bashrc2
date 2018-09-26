@@ -1,0 +1,30 @@
+
+#加载Git自动补全
+source /usr/local/etc/bash_completion.d/git-completion.bash
+# source /Users/penglei/lib/completion/.git-completion.bash
+# 用于加载算法库
+#export CLASSPATH=$CLASSPATH:~/algs4/algs4.jar
+
+
+alias ls="ls -G"
+alias adb="/Users/penglei/Library/Android/sdk/platform-tools/adb"
+alias chrome="open /Applications/Google\ Chrome.app/ "
+
+# 用于Idea中算法项目的手动执行加载jar
+alias javac_yu='javac -classpath ~/IdeaProjects/AlgorithmsLearning/lib/algs4.jar:'
+alias java_yu='java -classpath ~/IdeaProjects/AlgorithmsLearning/lib/algs4.jar:'
+
+# 用于防止ctrl-d自动退出shell
+set -o ignoreeof
+
+# 某些命令需要使用编辑器
+export EDITOR='vim'
+
+# svn添加未忽略的新文件
+#alias svnAddAll="svn st | awk \"{if ( \\\$1 == \\\"?\\\" ) { print \\\$2 }}\" | xargs svn add"
+#alias svnDelNull="svn st | awk \"{if ( \\\$1 == \\\"!\\\" ) { print \\\$2 }}\" | xargs svn rm"
+
+# 
+alias xzadd="git add .;git xzreset"
+# Fuck!!!
+eval $(thefuck --alias)
