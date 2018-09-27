@@ -1,9 +1,15 @@
+" 行号
 set number
+" tab宽度
 set tabstop=4
-set shiftwidth=4
+" 自动缩进
 set smartindent
-set expandtab
-
+" 缩进宽度
+set shiftwidth=4
+" 非扩展tab，tab不使用空格替换;%retab!对全文进行tab更换
+set noexpandtab
+" 显示不可见字符
+set invlist
 " 对大括号进行配对换行
 imap { {}<ESC>i<CR><ESC>O
 " scheme格式化脚本,可能需要racket支持，待验证
@@ -54,6 +60,8 @@ Plugin 'sjl/tslime.vim'
 """"""""""""""""""""""""""""Web 开始"""""""""""""""""""""""""""
 " html标签扩展
 Plugin 'mattn/emmet-vim'
+" html格式化
+Plugin 'othree/html5.vim'
 """"""""""""""""""""""""""""Web 结束"""""""""""""""""""""""""""
 "
 """"""""""""""""""""""""""""MarkDown 开始"""""""""""""""""""""""""""
