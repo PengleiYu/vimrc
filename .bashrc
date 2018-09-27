@@ -116,12 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
-####################customer###########################
+####################customer start###########################
+# exercism网站的命令
 if [ -f ~/.complete/exercism_completion.bash ];then
 	. ~/.complete/exercism_completion.bash 
 fi
 
-# 有些软件如git需要指定编辑器
-export EDITOR=vim
-# 先安装theFuck
+# 用于防止ctrl-d自动退出shell
+set -o ignoreeof
+# 某些命令需要使用编辑器
+export EDITOR='vim'
+# 需要先安装theFuck
 eval $(thefuck -a)
