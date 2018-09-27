@@ -6,6 +6,8 @@ set expandtab
 
 " 对大括号进行配对换行
 imap { {}<ESC>i<CR><ESC>O
+" scheme格式化脚本,可能需要racket支持，待验证
+autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
@@ -38,7 +40,32 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
+
+""""""""""""""""""""""""""""Scheme 开始"""""""""""""""""""""""""""
+" 括号配色
+Plugin 'amdt/vim-niji'
+" 括号自动补全
+Plugin 'vim-scripts/paredit.vim'
+" transfer limes，配合tmux跨边界转移，按两次<C-c>传输至指定pane并附加换行执行，
+" 若未指定pane，需要在第一次指定session、window、pane
+Plugin 'sjl/tslime.vim'
+""""""""""""""""""""""""""""Scheme 结束"""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""Web 开始"""""""""""""""""""""""""""
+" html标签扩展
 Plugin 'mattn/emmet-vim'
+""""""""""""""""""""""""""""Web 结束"""""""""""""""""""""""""""
+"
+""""""""""""""""""""""""""""MarkDown 开始"""""""""""""""""""""""""""
+" MarkDown预览
+" https://github.com/iamcco/markdown-preview.vim
+" MarkdownPreview开始预览，MarkdownPreviewStop结束预览
+Plugin 'iamcco/markdown-preview.vim'
+
+" MarkDown语法高亮
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+""""""""""""""""""""""""""""MarkDown 结束"""""""""""""""""""""""""""
 
 call vundle#end()            " required
 filetype plugin indent on    " required
