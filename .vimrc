@@ -60,8 +60,10 @@ Plugin 'sjl/tslime.vim'
 """"""""""""""""""""""""""""Web 开始"""""""""""""""""""""""""""
 " html标签扩展
 Plugin 'mattn/emmet-vim'
-" html格式化
+" html格式化；不完美，标签在一行就无法格式化了
 Plugin 'othree/html5.vim'
+" css格式化,没有效果
+"Plugin 'cakebaker/scss-syntax.vim'
 """"""""""""""""""""""""""""Web 结束"""""""""""""""""""""""""""
 "
 """"""""""""""""""""""""""""MarkDown 开始"""""""""""""""""""""""""""
