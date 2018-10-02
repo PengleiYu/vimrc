@@ -1,5 +1,9 @@
 " 行号
 set number
+" 高亮搜索
+set hlsearch
+" 增量搜索
+set incsearch
 " tab宽度
 set tabstop=4
 " 自动缩进
