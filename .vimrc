@@ -50,7 +50,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 平滑滚动;<ctrl-d><ctrl-u><ctrl-b><ctrl-f>
+Bundle 'yonchu/accelerated-smooth-scroll'
 """"""""""""""""""""""""""""Scheme 开始"""""""""""""""""""""""""""
 " 括号配色
 Plugin 'amdt/vim-niji'
