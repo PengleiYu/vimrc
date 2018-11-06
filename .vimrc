@@ -13,11 +13,11 @@ set shiftwidth=4
 " 非扩展tab，tab不使用空格替换;%retab!对全文进行tab更换
 set noexpandtab
 " 显示不可见字符
-set invlist
+" set invlist
 " 对大括号进行配对换行
 imap { {}<ESC>i<CR><ESC>O
 " scheme格式化脚本,可能需要racket支持，待验证
-autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
+" autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
