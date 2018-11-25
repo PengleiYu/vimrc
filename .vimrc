@@ -4,14 +4,16 @@ set number
 set hlsearch
 " 增量搜索
 set incsearch
-" tab宽度
+
+" 现存的tab宽度
 set tabstop=4
-" 自动缩进
-set smartindent
 " 缩进宽度
 set shiftwidth=4
-" 非扩展tab，tab不使用空格替换;%retab!对全文进行tab更换
-set noexpandtab
+" 扩展tab，tab使用空格替换;%retab!对全文进行tab更换
+set expandtab
+
+" 自动缩进
+set smartindent
 " 显示不可见字符
 " set invlist
 " 对大括号进行配对换行
